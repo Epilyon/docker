@@ -1,0 +1,16 @@
+version: '3'
+services:
+  arangodb:
+    image: arangodb
+    restart: always
+    command: arangodb
+  epilink:
+    image: epilyon_server
+    build: ./epilyon_server
+    restart: always
+    env_file: ./vars.env
+    volumes:
+      - ./config:/var/run/epilyon/config
+      - ./logs:/var/run/epilyon/logs
+    ports:
+      - "127.0.0.1:7899:7899"

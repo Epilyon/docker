@@ -1,0 +1,4 @@
+[submodule "epilyon_server"]
+	path = epilyon_server
+	url = git@github.com:Epilyon/epilyon_server.git
+	branch = master

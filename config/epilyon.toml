@@ -11,6 +11,7 @@ cri_url = "https://cri.epita.fr"
 cri_accessor_username = "FILL ME"
 cri_accessor_password = "FILL ME"
 cri_promos = ["2024"]
+
 ms_tenant_url = "FILL ME"
 ms_client_id = "FILL ME"
 ms_scopes = ["openid", "offline_access", "profile", "mail.read"]
@@ -18,4 +19,5 @@ ms_redirect_uri = "http://CHANGE_ME/auth/redirect"
 ms_webhook_uri = "http://CHANGE_ME/data/notify"
 ms_webhook_key = "FILL ME"
 ms_secret = "FILL ME"
+
 firebase_secret = "FILL ME"

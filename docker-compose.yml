@@ -1,10 +1,10 @@
 version: '3'
 services:
   arangodb:
-    image: arangodb
+    image: arangodb:3.7
     restart: always
-    command: arangodb
-  epilink:
+    env_file: ./vars.env
+  epilyon_server:
     image: epilyon_server
     build: ./epilyon_server
     restart: always

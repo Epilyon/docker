@@ -10,7 +10,9 @@ services:
     restart: always
     env_file: ./vars.env
     volumes:
-      - ./config:/var/run/epilyon/config
-      - ./logs:/var/run/epilyon/logs
+      - ./config:/config
+      - ./logs:/logs
     ports:
       - "127.0.0.1:7899:7899"
+    depends_on:
+      - "arangodb"

@@ -4,6 +4,8 @@ services:
     image: arangodb:3.7
     restart: always
     env_file: ./vars.env
+    volumes:
+      - ./data:/var/lib/arangodb3
   epilyon_server:
     image: epilyon_server
     build: ./epilyon_server
